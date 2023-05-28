@@ -17,5 +17,10 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+        binding.button3.setOnClickListener {
+            val intent = Intent(this,GoogleAuthenticationActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
