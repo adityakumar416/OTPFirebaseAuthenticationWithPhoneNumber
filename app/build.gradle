@@ -50,13 +50,11 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation platform('com.google.firebase:firebase-bom:32.1.0')
 
-    // Add the dependency for the Firebase Authentication library
-    // When using the BoM, you don't specify versions in Firebase library dependencies
-
     // Also add the dependency for the Google Play services library and specify its version
-    implementation 'com.google.android.gms:play-services-auth:20.5.0'
+    implementation 'com.google.android.gms:play-services-auth:20.6.0'
 
     // facebook auth
-    implementation 'com.facebook.android:facebook-login:5.15.3'
+    implementation 'com.facebook.android:facebook-login:latest.release'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 
 }

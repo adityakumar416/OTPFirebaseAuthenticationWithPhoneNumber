@@ -22,5 +22,13 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this,GoogleAuthenticationActivity::class.java)
             startActivity(intent)
         }
+        binding.button2.setOnClickListener {
+            val intent = Intent(this,FacebookAuthenticationActivity::class.java)
+            startActivity(intent)
+        }
+        binding.button4.setOnClickListener {
+            val intent = Intent(this,GithubAuthActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

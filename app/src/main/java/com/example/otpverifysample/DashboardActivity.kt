@@ -17,8 +17,10 @@ class DashboardActivity : AppCompatActivity() {
         setContentView(R.layout.activity_dashboard)
         val signOut = findViewById<Button>(R.id.button)
         val welcome = findViewById<TextView>(R.id.welcome)
-        signOut.setOnClickListener { signOut() }
+        val name = findViewById<TextView>(R.id.name)
 
+        signOut.setOnClickListener { signOut() }
+        name.text = Firebase.auth.currentUser?.displayName.toString()
         welcome.text= Firebase.auth.currentUser?.email.toString()
     }
 

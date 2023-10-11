@@ -25,6 +25,7 @@ class VerifyOtpFragment : Fragment() {
     private lateinit var mAuth:FirebaseAuth
 
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -117,6 +118,5 @@ class VerifyOtpFragment : Fragment() {
                 }
             }
     }
-
 
 }
